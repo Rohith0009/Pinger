@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="room.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+    <script src="room.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Pinger</title>
+    <link rel="icon" href="Logo.png" />
+  </head>
+  <body onload="startup();">
+    <div class="container">
+      <button id="logout" class="glyphicon glyphicon-log-out btn" style="background-color: red; color: white" onclick="logout()">Logout</button>
+      <center>
+        <h1 class="name">
+          Pinger
+          <img src="logo.png" id="name_logo" />
+        </h1>
+        <br />
+        <h2 id="name_display1"></h2>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11" id="join_box">
+          <h3>Join Or Create A Room</h3>
+          <input type="text" id="room_name_input" placeholder="Enter Room Name" class="form-control" />
+          <br />
+          <button class="btn btn-primary" id="add_room">Join Room</button>
+        </div>
+        <br />
+        <br />
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11" id="trending_rooms">
+          <h3>Top Trending Rooms</h3>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>

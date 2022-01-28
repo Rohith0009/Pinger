@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(90deg, red, blue);
+  height: 100%;
+  margin: 0;
+}
+
+.name {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 65px;
+}
+
+#name_logo {
+  width: 80px;
+}
+
+#login_box {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
+#login_button {
+  width: 40%;
+  border-radius: 15px;
+  margin-bottom: 9px;
+}
+
+#buttons {
+  display: inline;
+}

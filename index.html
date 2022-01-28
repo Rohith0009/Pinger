@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <title>Pinger</title>
+    <link rel="icon" href="Logo.png" />
+  </head>
+  <body>
+    <center>
+      <h1 class="name">
+        Pinger
+        <img src="logo.png" id="name_logo" />
+      </h1>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11" id="login_box">
+        <img src="logo.png" style="width: 80px" />
+        <h1>Welcome To Pinger!</h1>
+        <h3>Pinger Is A Interactive Social Media App Which Can Be Used To Chat With Others Online Using Different Chat Rooms</h3>
+        <br />
+        <input type="text" id="full_name" placeholder="Enter You Full Name" class="form-control" /> <br />
+        <input type="text" id="email" placeholder="Enter You E-Mail" class="form-control" /> <br />
+        <input type="text" id="password" placeholder="Enter You Password" class="form-control" /> <br />
+        <div id="buttons">
+          <button onclick="login()" class="btn btn-primary form-control" id="login_button">Log In</button> <br />
+          <button onclick="login()" class="btn btn-primary form-control" id="login_button">Register</button> <br />
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
