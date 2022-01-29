@@ -19,6 +19,9 @@ body {
 #logout {
   font-size: 20px;
   float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 #name_display1 {
@@ -29,14 +32,17 @@ body {
   margin-top: 0px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  padding-bottom: 9px;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 #trending_rooms {
   margin-top: 0px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  padding-bottom: 9px;
+  width: 500px;
+  padding: 10px;
 }
 
 #name_display1 img {
