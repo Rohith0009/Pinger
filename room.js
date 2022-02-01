@@ -22,19 +22,11 @@ firebase.initializeApp(firebaseConfig);
 
 user_name = localStorage.getItem("user_name");
 
-function getData() {
-  firebase
-    .database()
-    .ref("/")
-    .on("value", function (snapshot) {
-      document.getElementById("output").innerHTML = "";
-      snapshot.forEach(function (childSnapshot) {
-        childKey = childSnapshot.key;
-        Room_names = childKey;
-        //Start code
+function add_room() {
+  room_name = document.getElementById("room_name_input").value;
+  localStorage.setItem("room_name", room_name);
 
-        //End code
-      });
-    });
+  firebase.database().ref("/").child(room_name).update({
+    Pinger: "First Message",
+  });
 }
-getData();
