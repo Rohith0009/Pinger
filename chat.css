@@ -1,0 +1,25 @@
+.name {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 65px;
+  margin-top: 50px;
+}
+
+#name_logo {
+  width: 80px;
+}
+
+body {
+  background: linear-gradient(90deg, red, blue);
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+#back {
+  font-size: 20px;
+  float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
