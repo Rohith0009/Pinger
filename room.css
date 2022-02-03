@@ -21,6 +21,10 @@ body {
   font-size: 20px;
 }
 
+#hr1{
+  color:black
+}
+
 #logout {
   font-size: 20px;
   float: right;

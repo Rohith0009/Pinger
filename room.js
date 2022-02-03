@@ -42,8 +42,9 @@ function getData() {
       snapshot.forEach(function (childSnapshot) {
         childKey = childSnapshot.key;
         Room_names = childKey;
+        id_Room_names = Room_names.replace(" ", "_");
         //Start code
-        row = "<div class='room_name' id=" + Room_names + " onclick='redirect(this.id)'> #" + Room_names + " </div><hr>";
+        row = "<div class='room_name' id=" + id_Room_names + " onclick='redirect(this.id)'> #" + Room_names + " </div><hr id='hr1'>";
         document.getElementById("room_list").innerHTML += row;
         //End code
       });
@@ -52,6 +53,8 @@ function getData() {
 getData();
 
 function redirect(name) {
+  name = name.replace("_", " ");
+  console.log(name);
   localStorage.setItem("room_name", name);
-  window.location = "chat.html";
+  window.location = "chat.html"
 }
