@@ -32,9 +32,6 @@ firebase.initializeApp(firebaseConfig);
 function join() {
   console.log("Joining");
   room_name = document.getElementById("room_name_input").value;
-  firebase.database().ref("/").child(room_name).update({
-    Pinger: "First Message",
-  });
   localStorage.setItem("room_name", room_name);
   window.location = "chat.html";
 }
