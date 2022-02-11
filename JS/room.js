@@ -1,5 +1,5 @@
 function notices() {
-  window.location = "HTML/notices.html";
+  window.location = "notices.html";
 }
 
 function logout() {
@@ -7,7 +7,7 @@ function logout() {
   localStorage.removeItem("email");
   localStorage.removeItem("password");
   localStorage.removeItem("room_name");
-  window.location = "/index.html";
+  window.location = "index.html";
 }
 
 function startup() {
@@ -36,7 +36,7 @@ function join() {
     Pinger: "First Message",
   });
   localStorage.setItem("room_name", room_name);
-  window.location = "HTML/chat.html";
+  window.location = "chat.html";
 }
 
 function getData() {
@@ -62,5 +62,5 @@ function redirect(name) {
   name = name.replace("_", " ");
   console.log(name);
   localStorage.setItem("room_name", name);
-  window.location = "HTML/chat.html";
+  window.location = "chat.html";
 }

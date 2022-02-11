@@ -12,7 +12,7 @@ function logout() {
 }
 
 function back() {
-  window.location = "HTML/room.html";
+  window.location = "room.html";
 }
 
 var firebaseConfig = {
