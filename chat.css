@@ -23,3 +23,27 @@ body {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+
+.chat_container {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 500px;
+  padding: 10px;
+}
+
+#room_name_display {
+  color: black;
+}
+
+#send_container {
+  margin-top: 40%;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#send_container button{
+  width: 180px;
+}

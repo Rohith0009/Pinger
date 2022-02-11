@@ -28,9 +28,13 @@
           <img src="Logo.png" id="name_logo" />
         </h1>
         <br />
-        <h2 id="room_name_display"></h2>
-        <img src="https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg" style="width:700px; margin-top:20px"><br>
-        <h1> Under Development </h1>  
+        <div>
+          <h2 id="room_name_display" class="chat_container"></h2>
+        </div>
+        <div id="send_container">
+          <input placeholder="Message..." class="form-control" id="msg"/>
+          <button class="form-control btn btn-success" onclick="send()">Send!</button>
+        </div>
       </center>
     </div>
   </body>
