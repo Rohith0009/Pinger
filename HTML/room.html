@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/room.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+    <script src="/JS/room.js"></script>
+    <script defer src="//code.tidio.co/bo7ojrr3a3sjwj3r8wtpg8llxeyvhw0m.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Pinger</title>
+    <link rel="icon" href="/Images/Logo.png" />
+  </head>
+  <body onload="startup();">
+    <div class="container">
+      <button id="logout" class="glyphicon glyphicon-log-out btn" style="background-color: red; color: white" onclick="logout()">Logout</button>
+      <button id="notices" class="glyphicon glyphicon-bell btn" style="background-color: limegreen; color: white" onclick="notices()">Notices</button>
+      <center>
+        <h1 class="name">
+          Pinger
+          <img src="/Images/Logo.png" id="name_logo" />
+        </h1>
+        <br />
+        <h2 id="name_display1"></h2>
+        <div id="join_box">
+          <h2>Join Or Create A Room</h2>
+          <input type="text" id="room_name_input" placeholder="Enter Room Name" class="form-control" />
+          <br />
+          <button class="btn btn-primary" id="add_room" onclick="join()">Join Room</button>
+        </div>
+        <div id="trending_rooms">
+          <h2 style="margin-bottom: 20px">Top Trending Rooms</h2>
+          <div id="room_list"></div>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>

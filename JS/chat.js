@@ -3,8 +3,16 @@ function startup() {
   document.getElementById("room_name_display").innerHTML = "Welcome To, #" + room_name;
 }
 
+function logout() {
+  localStorage.removeItem("full_name");
+  localStorage.removeItem("email");
+  localStorage.removeItem("password");
+  localStorage.removeItem("room_name");
+  window.location = "/index.html";
+}
+
 function back() {
-  window.location = "room.html";
+  window.location = "/HTML/room.html";
 }
 
 var firebaseConfig = {
@@ -22,12 +30,12 @@ firebase.initializeApp(firebaseConfig);
 //Main code
 
 room_name = localStorage.getItem("room_name");
-user_name = localStorage.getItem("username");
+full_name = localStorage.getItem("full_name");
 
 function send() {
   msg = document.getElementById("msg").value;
   firebase.database().ref(room_name).push({
-    Name: user_name,
+    Name: full_name,
     Message: msg,
     Like: 0,
   });
