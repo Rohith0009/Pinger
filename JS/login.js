@@ -5,7 +5,7 @@ function login() {
   localStorage.setItem("full_name", full_name);
   localStorage.setItem("email", email);
   localStorage.setItem("password", password);
-  window.location = "/HTML/room.html";
+  window.location = "HTML/room.html";
 }
 
 function register() {
@@ -15,5 +15,5 @@ function register() {
   localStorage.setItem("full_name", full_name);
   localStorage.setItem("email", email);
   localStorage.setItem("password", password);
-  window.location = "/HTML/room.html";
+  window.location = "HTML/room.html";
 }

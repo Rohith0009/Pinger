@@ -1,5 +1,5 @@
 function notices() {
-  window.location = "/HTML/notices.html";
+  window.location = "HTML/notices.html";
 }
 
 function logout() {
@@ -14,7 +14,7 @@ function startup() {
   full_name = localStorage.getItem("full_name");
   email = localStorage.getItem("email");
   password = localStorage.getItem("password");
-  document.getElementById("name_display1").innerHTML = "Hello, " + full_name + "<sup><img src='/Images/Verified_logo.png' /></sup>";
+  document.getElementById("name_display1").innerHTML = "Hello, " + full_name + "<sup><img src='Images/Verified_logo.png' /></sup>";
 }
 
 var firebaseConfig = {
@@ -36,7 +36,7 @@ function join() {
     Pinger: "First Message",
   });
   localStorage.setItem("room_name", room_name);
-  window.location = "/HTML/chat.html";
+  window.location = "HTML/chat.html";
 }
 
 function getData() {
@@ -62,5 +62,5 @@ function redirect(name) {
   name = name.replace("_", " ");
   console.log(name);
   localStorage.setItem("room_name", name);
-  window.location = "/HTML/chat.html";
+  window.location = "HTML/chat.html";
 }
