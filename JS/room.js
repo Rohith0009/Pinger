@@ -2,6 +2,10 @@ function notices() {
   window.location = "notices.html";
 }
 
+function contact() {
+  window.location = "contact.html";
+}
+
 function logout() {
   localStorage.removeItem("full_name");
   localStorage.removeItem("email");

@@ -21,8 +21,8 @@ body {
   font-size: 20px;
 }
 
-#hr1{
-  color:black
+#hr1 {
+  color: black;
 }
 
 #logout {
@@ -40,6 +40,16 @@ body {
   margin-top: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+#contact {
+  font-size: 20px;
+  margin-right: 10px;
+  float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: black !important;
 }
 
 #name_display1 {
