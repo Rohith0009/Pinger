@@ -4,7 +4,7 @@ function logout() {
   localStorage.removeItem("password");
   localStorage.removeItem("room_name");
   window.location = "/index.html";
-}
+} 
 
 function back() {
   window.location = "/HTML/room.html";
