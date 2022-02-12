@@ -15,6 +15,10 @@ function back() {
   window.location = "room.html";
 }
 
+function contact() {
+  window.location = "contact.html";
+}
+
 var firebaseConfig = {
   apiKey: "AIzaSyAj5LQ3TvmfykEQktNRf3ga2QcNi5T89LA",
   authDomain: "pinger-82f60.firebaseapp.com",

@@ -16,3 +16,7 @@ function startup() {
   password = localStorage.getItem("password");
   document.getElementById("name_display1").innerHTML = "Hello, " + full_name + "<sup><img src='Images/Verified_logo.png' /></sup> <br> Welcome To, Notices! ";
 }
+
+function contact() {
+  window.location = "contact.html";
+}

@@ -49,3 +49,13 @@ body {
   padding-bottom: 3px;
   margin-bottom: 5px;
 }
+
+#contact {
+  font-size: 20px;
+  margin-right: 10px;
+  float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: black !important;
+}

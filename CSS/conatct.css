@@ -41,3 +41,12 @@ body {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+
+#name_display1 {
+  color: white;
+}
+
+#name_display1 img {
+  width: 30px;
+  margin-top: 13px;
+}
