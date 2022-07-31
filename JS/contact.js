@@ -20,3 +20,12 @@ function startup() {
   password = localStorage.getItem("password");
   document.getElementById("name_display1").innerHTML = "Hello, " + full_name + "<sup><img src='Images/Verified_logo.png' /></sup> <br> Welcome To, Contact! ";
 }
+
+function send() {
+  msg = document.getElementById("msg").value;
+  firebase.database().ref(room_name).push({
+    Name: full_name,
+    Message: msg,
+  });
+  document.getElementById("msg").value = "";
+}

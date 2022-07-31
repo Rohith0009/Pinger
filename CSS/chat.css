@@ -16,23 +16,6 @@ body {
   color: white;
 }
 
-#back {
-  font-size: 20px;
-  margin-right: 10px;
-  float: right;
-  margin-top: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-#logout {
-  font-size: 20px;
-  float: right;
-  margin-top: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
 .chat_container {
   margin-top: 15px;
   background: rgba(255, 255, 255, 0.8);
@@ -49,12 +32,12 @@ body {
   margin-top: 40%;
 }
 
-input {
-  margin-bottom: 10px;
-}
-
 #send_container button {
   width: 180px;
+}
+
+input {
+  margin-bottom: 10px;
 }
 
 #contact {
@@ -65,4 +48,21 @@ input {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: black !important;
+}
+
+#back {
+  font-size: 20px;
+  margin-right: 10px;
+  float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#logout {
+  font-size: 20px;
+  float: right;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }

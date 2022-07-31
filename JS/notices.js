@@ -20,3 +20,4 @@ function startup() {
 function contact() {
   window.location = "contact.html";
 }
+

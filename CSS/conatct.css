@@ -50,3 +50,15 @@ body {
   width: 30px;
   margin-top: 13px;
 }
+
+#send_container {
+  margin-top: 40%;
+}
+
+#send_container button {
+  width: 180px;
+}
+
+input {
+  margin-top: 10px;
+}
