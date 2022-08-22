@@ -49,15 +49,30 @@ function send() {
 function getData() {
   firebase
     .database()
-    .ref("/")
+    .ref("/ + room_name")
     .on("value", function (snapshot) {
       document.getElementById("room_list").innerHTML = "";
       snapshot.forEach(function (childSnapshot) {
         childKey = childSnapshot.key;
-        Room_names = childKey;
-        id_Room_names = Room_names.replace(" ", "_");
+        childData = childSnapshot.val();
+        if (childKey != "purpose") {
+          firebase_message_id = childKey;
+          message_data = childData;
         //Start code
+          console.log(firebase_message_id);
+          console.log(message_data);
 
+          name = message_data["Name"];
+          message = message_data["Message"];
+          like = message_data["Like"];
+
+          name_with_tag = "<h4>" + name + "<img src='tick.png' class='user_tick'></h4>";
+          message_with_tag = "<h4 class='message_h4'>" + message + "</h4>";
+          like_button = "<button class='btn btn-warning' id=" + firebase_message_id + " value=" + like + " onclick='updateLike(this.id)'>";
+          span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'> Like:" + like + "</span> </button> <hr>";
+         
+          row = name_with_tag + message_with_tag + like_button + span_with_tag;
+          document.getElementById("room_list").innerHTML += row;
         //End code
       });
     });
